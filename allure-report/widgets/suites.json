@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"2fd6a487c08e6a9e0b991dba8068def1","name":"CrossBrowserSuite","statistic":{"failed":0,"broken":1,"skipped":0,"passed":3,"unknown":0,"total":4}},{"uid":"2c8837b97293ea01a164a5cd7048ad56","name":"Default suite","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

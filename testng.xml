@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ECAP Suite">
+  <test name="Search Test">
+    <classes>
+      <class name="com.seleniums.tests.selenium.EcapSearchTest"/>
+    </classes>
+  </test>
+</suite>

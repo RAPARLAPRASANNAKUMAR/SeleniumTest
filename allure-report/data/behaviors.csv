@@ -1,0 +1,4 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","ECAP Automation","0","Login Feature","1","0","Valid login into ECAP","0"
+"0","cross browser testing","0","Open a sauce demo in various broswers","3","0","Open site and verify","0"
+"1","","0","","0","0","","0"
