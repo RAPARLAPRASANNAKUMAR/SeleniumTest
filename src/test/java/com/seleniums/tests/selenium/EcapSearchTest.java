@@ -101,7 +101,7 @@ public class EcapSearchTest {
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("capIframe"));
         
         WebElement perfPast = wait.until(ExpectedConditions.elementToBeClickable(
-            By.cssSelector("#tblReport > h1:nth-child(5)")
+            By.cssSelector("#tblReport > h1:nth-child(5)")//hi
         ));
         perfPast.click();
         
