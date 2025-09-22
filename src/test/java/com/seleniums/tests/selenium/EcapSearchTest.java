@@ -50,6 +50,14 @@ public class EcapSearchTest {
         enterCredentials("22a81a05i7", "prasannakumar65");
 
         clickLogin();
+        
+        Thread.sleep(2000); 
+         
+        //clickAcademicRegister();
+        
+        clickPerformancePast();
+        
+        
     }
 
     @Step("Navigating to ECAP URL")
@@ -73,4 +81,36 @@ public class EcapSearchTest {
         WebElement login = driver.findElement(By.name("imgBtn2"));
         login.click();
     }
-}
+    
+    
+ 
+    @Step("Click on ACADAMIC REGISTER link")
+    public void clickAcademicRegister() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        WebElement acadRegLink = wait.until(
+            ExpectedConditions.elementToBeClickable(By.partialLinkText("ACADAMIC"))
+        );
+        acadRegLink.click();
+    }
+    
+    @Step("Click on Performance Past section")
+    public void clickPerformancePast() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        
+        // If it's inside an iframe like "capIframe", switch to it
+        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("capIframe"));
+        
+        WebElement perfPast = wait.until(ExpectedConditions.elementToBeClickable(
+            By.cssSelector("#tblReport > h1:nth-child(5)")
+        ));
+        perfPast.click();
+        
+
+        //driver.switchTo().defaultContent(); // Switch back to main page if needed/
+    }
+
+    	
+    	
+    }
+
+
