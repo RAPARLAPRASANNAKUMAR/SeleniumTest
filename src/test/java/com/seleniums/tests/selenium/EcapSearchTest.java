@@ -103,7 +103,7 @@ public class EcapSearchTest {
         WebElement perfPast = wait.until(ExpectedConditions.elementToBeClickable(
             By.cssSelector("#tblReport > h1:nth-child(5)")//hi
         ));
-        perfPast.click();
+        perfPast.click();//hii
         
 
         //driver.switchTo().defaultContent(); // Switch back to main page if needed/

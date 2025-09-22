@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-ECAP_Suite" class="navigator-link">
-              <span class="suite-name border-failed">ECAP Suite</span>
+              <span class="suite-name border-passed">ECAP Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-ECAP_Suite" class="hide-methods failed suite-ECAP_Suite"> (hide)</a> <!-- hide-methods failed suite-ECAP_Suite -->
-                      <a href="#" panel-name="suite-ECAP_Suite" class="show-methods failed suite-ECAP_Suite"> (show)</a> <!-- show-methods failed suite-ECAP_Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-ECAP_Suite" class="hide-methods passed suite-ECAP_Suite"> (hide)</a> <!-- hide-methods passed suite-ECAP_Suite -->
+                      <a href="#" panel-name="suite-ECAP_Suite" class="show-methods passed suite-ECAP_Suite"> (show)</a> <!-- show-methods passed suite-ECAP_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-ECAP_Suite">
+                    <div class="method-list-content passed suite-ECAP_Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-ECAP_Suite" title="com.seleniums.tests.selenium.EcapSearchTest" class="method navigator-link" hash-for-method="testEcap">testEcap</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-ECAP_Suite -->
+                    </div> <!-- method-list-content passed suite-ECAP_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,9 +118,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ECAP_Suite" class="panel ECAP_Suite">
-          <div class="suite-ECAP_Suite-class-failed">
+          <div class="suite-ECAP_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.seleniums.tests.selenium.EcapSearchTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,25 +129,12 @@
                   <a name="testEcap">
                   </a> <!-- testEcap -->
                   <span class="method-name">testEcap</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: txtId2 (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52054}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52054/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c506f21f4838596d103429af26c66ac6
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.seleniums.tests.selenium.EcapSearchTest.enterCredentials(EcapSearchTest.java:72)
-	at com.seleniums.tests.selenium.EcapSearchTest.testEcap(EcapSearchTest.java:50)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Login to ECAP portal with valid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ECAP_Suite-class-failed -->
+          </div> <!-- suite-ECAP_Suite-class-passed -->
         </div> <!-- panel ECAP_Suite -->
         <div panel-name="test-xml-ECAP_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -204,12 +191,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testEcap')
 data.setCell(0, 2, 'com.seleniums.tests.selenium.EcapSearchTest')
-data.setCell(0, 3, 18952);
+data.setCell(0, 3, 7702);
 window.suiteTableData['ECAP_Suite']= { tableData: data, tableDiv: 'times-div-ECAP_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-ECAP_Suite">
               </div> <!-- times-div-ECAP_Suite -->
             </div> <!-- times-div -->
@@ -241,10 +228,8 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testEcap</span>
-                <span class="method-start">38916 ms</span>
+                <span class="method-start">2948 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
