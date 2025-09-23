@@ -79,7 +79,7 @@ public class EcapSearchTest {
     @Step("Clicking login button")
     public void clickLogin() {
         WebElement login = driver.findElement(By.name("imgBtn2"));
-        login.click();
+        login.click();// i am logging in
     }
     
     
